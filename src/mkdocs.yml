@@ -1,0 +1,45 @@
+site_name: Pax Fabrica
+nav:
+  - Pax Fabrica:
+    - introduction: index.md
+  - Une Éducation libre:
+    - introduction: index.md
+  - Outils:
+    - introduction: index.md
+
+theme: 
+  icon:
+    logo: material/mother-heart
+    favicon: images/favicon.png
+    admonition:
+      note: material/mother-heart
+  name: material 
+  language: fr
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      toggle:
+        icon: material/brightness-4
+        name: Passer au mode sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      toggle:
+        icon: material/brightness-7
+        name: Passer au mode clair
+  features:
+    - navigation.expand
+    - navigation.tabs
+
+markdown_extensions:
+  - pymdownx.highlight:
+      use_pygments: true
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
